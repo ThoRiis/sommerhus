@@ -5,6 +5,7 @@ import plotly.graph_objects as go
 import plotly.express as px
 import streamlit as st
 
+st.set_page_config(layout="wide")
 
 
 def _max_width_():
