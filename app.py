@@ -125,9 +125,7 @@ st.markdown("""
 
 
 
-st.write(
-        f'<iframe src="https://www.nykredit.dk/dit-liv/bolig/boligberegnere/beregn-lan-til-ny-bolig/"></iframe>',
-        unsafe_allow_html=True,
+
 
 import streamlit.components.v1 as components
 
