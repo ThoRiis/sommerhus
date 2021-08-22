@@ -4,6 +4,7 @@ import numpy as np
 import plotly.graph_objects as go
 import plotly.express as px
 import streamlit as st
+import streamlit.components.v1 as components
 
 st.set_page_config(layout="wide")
 
@@ -111,24 +112,8 @@ st.plotly_chart(fig)
 
 
 
-st.markdown("""
-<style>
-.big-container {
-                width: 100%;
-                height: 100%;
-                margin: 0;
-                padding: 0;
-                background-color: green;
-            }
-</style>
-""", unsafe_allow_html=True)
 
 
-
-
-
-import streamlit.components.v1 as components
 
 # bootstrap 4 collapse example
-components.html(f'<iframe src="https://www.nykredit.dk/dit-liv/bolig/boligberegnere/beregn-lan-til-ny-bolig/"></iframe>', height = 1000)
-components.iframe("https://www.nykredit.dk/dit-liv/bolig/boligberegnere/beregn-lan-til-ny-bolig")
+components.iframe("https://www.nykredit.dk/dit-liv/bolig/boligberegnere/beregn-lan-til-ny-bolig", height = 1000)
