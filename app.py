@@ -126,6 +126,10 @@ st.markdown("""
 
 
 st.write(
-        f'<iframe class="big-font" >src="https://www.nykredit.dk/dit-liv/bolig/boligberegnere/beregn-lan-til-ny-bolig/"></iframe>',
+        f'<iframe src="https://www.nykredit.dk/dit-liv/bolig/boligberegnere/beregn-lan-til-ny-bolig/"></iframe>',
         unsafe_allow_html=True,
-    )
+
+import streamlit.components.v1 as components
+
+# bootstrap 4 collapse example
+components.html(f'<iframe src="https://www.nykredit.dk/dit-liv/bolig/boligberegnere/beregn-lan-til-ny-bolig/"></iframe>', height = 600)
