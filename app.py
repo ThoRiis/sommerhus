@@ -130,4 +130,5 @@ st.markdown("""
 import streamlit.components.v1 as components
 
 # bootstrap 4 collapse example
-components.html(f'<iframe src="https://www.nykredit.dk/dit-liv/bolig/boligberegnere/beregn-lan-til-ny-bolig/"></iframe>', height = 600)
+components.html(f'<iframe src="https://www.nykredit.dk/dit-liv/bolig/boligberegnere/beregn-lan-til-ny-bolig/"></iframe>', height = 1000)
+components.iframe("https://www.nykredit.dk/dit-liv/bolig/boligberegnere/beregn-lan-til-ny-bolig")
