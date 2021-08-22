@@ -22,7 +22,7 @@ def _max_width_():
             unsafe_allow_html=True,
         )
 
-#_max_width_()
+_max_width_()
 
 ################################################
 #
