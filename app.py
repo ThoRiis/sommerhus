@@ -20,7 +20,7 @@ def _max_width_():
             unsafe_allow_html=True,
         )
 
-_max_width_()
+#_max_width_()
 
 ################################################
 #
@@ -31,20 +31,17 @@ _max_width_()
 ################################################
 
 
+st.title('Sommerhusberegner')
 
 
 
-st.sidebar.title('Inputs')
+lejeindtægter = st.number_input('Lejeindtægter',value= 50000)
+ejerudgifter = st.number_input('Ejerudgifter',value= 10000)
+vedligehold = st.number_input('Vedligeholdelsesudgifter',value= 5000)
+finansieringsomkostninger = st.number_input('Finansieringsomkostninger',value= 5000)
+forbrugsomkostninge = st.number_input('forbrugsomkostninge',value= 5000)
 
 
-lejeindtægter = st.sidebar.number_input('Lejeindtægter',value= 50000)
-ejerudgifter = st.sidebar.number_input('Ejerudgifter',value= 10000)
-vedligehold = st.sidebar.number_input('Vedligeholdelsesudgifter',value= 5000)
-finansieringsomkostninger = st.sidebar.number_input('Finansieringsomkostninger',value= 5000)
-forbrugsomkostninge = st.sidebar.number_input('forbrugsomkostninge',value= 5000)
-
-
-Salgspris = st.sidebar.number_input('Salgspris',value= 200000)
 
 data_sommerhus = { 
 
@@ -67,7 +64,6 @@ except:
     pass
 
 
-st.title('Sommerhusberegner')
 
 
 
