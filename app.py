@@ -6,7 +6,7 @@ import plotly.express as px
 import streamlit as st
 import streamlit.components.v1 as components
 
-st.set_page_config(layout="wide")
+#st.set_page_config(layout="wide")
 
 
 def _max_width_():
