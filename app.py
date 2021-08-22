@@ -61,8 +61,8 @@ df_sommerhus = pd.DataFrame.from_dict(data_sommerhus)
 
 try:
 
-    df_sommerhus['skat'] = max((lejeindtægter -43000)*0.4*0.5,0)
-    df_sommerhus['profit'] = lejeindtægter -lejeindtægter - ejerudgifter - vedligehold -finansieringsomkostninger -forbrugsomkostninge -df_sommerhus['skat']
+    df_sommerhus['skat'] = max((lejeindtægter -43000)*0.4*0.5,0)*-1
+    df_sommerhus['profit'] = lejeindtægter - ejerudgifter - vedligehold -finansieringsomkostninger -forbrugsomkostninge +df_sommerhus['skat']
 except:
     pass
 
