@@ -108,7 +108,24 @@ fig.update_layout(
 
 st.plotly_chart(fig)
 
+
+
+
+st.markdown("""
+<style>
+.big-container {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                background-color: green;
+            }
+</style>
+""", unsafe_allow_html=True)
+
+
+
 st.write(
-        f'<iframe src="https://www.nykredit.dk/dit-liv/bolig/boligberegnere/beregn-lan-til-ny-bolig/"></iframe>',
+        f'<iframe class="big-font" >src="https://www.nykredit.dk/dit-liv/bolig/boligberegnere/beregn-lan-til-ny-bolig/"></iframe>',
         unsafe_allow_html=True,
     )
