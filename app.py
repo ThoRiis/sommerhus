@@ -107,4 +107,7 @@ fig.update_layout(
 
 st.plotly_chart(fig)
 
-
+st.write(
+        f'<iframe src="https://www.nykredit.dk/dit-liv/bolig/boligberegnere/beregn-lan-til-ny-bolig/"></iframe>',
+        unsafe_allow_html=True,
+    )
